@@ -10,8 +10,6 @@ function App() {
 
   const [state, dispatch] = useReducer(cartReducer, initialState)
 
-  console.log(state)
-
   return (
     <>
       <Header 
@@ -32,7 +30,7 @@ function App() {
                   <Guitar 
                     key={guitar.id}
                     guitar={guitar}
-                    addToCart={addToCart}
+                    dispatch={dispatch}
                   />
               ))}
               

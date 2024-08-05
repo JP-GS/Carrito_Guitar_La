@@ -23,6 +23,7 @@ export const cartReducer = (
     action: cartActions
 ) => {
     if(action.type === 'add-to-cart') {
+        console.log('desde el reducer')
         return {
             ...state
         }
